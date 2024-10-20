@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/my_name"
+        app:layout_constraintBottom_toTopOf="@+id/tvMyRa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMyRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/my_ra"
+        app:layout_constraintBottom_toTopOf="@+id/tvFaces"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyName" />
+
+    <TextView
+        android:id="@+id/tvFaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="@string/qtd_faces"
+        app:layout_constraintBottom_toTopOf="@+id/spQtdFaces"
+        app:layout_constraintEnd_toEndOf="@+id/spQtdFaces"
+        app:layout_constraintTop_toBottomOf="@+id/tvMyRa" />
+
+    <Button
+        android:id="@+id/btnRolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="223dp"
+        android:text="@string/btn_rolar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rgQtds"
+        app:layout_constraintTop_toBottomOf="@+id/rgQtds" />
+
+    <RadioGroup
+        android:id="@+id/rgQtds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spQtdFaces">
+
+        <RadioButton
+            android:id="@+id/rbQtd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qtd_1" />
+
+        <RadioButton
+            android:id="@+id/rbQtd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qtd_2" />
+
+        <RadioButton
+            android:id="@+id/rbQtd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/qtd_3" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spQtdFaces"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/rgQtds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFaces" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRolar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

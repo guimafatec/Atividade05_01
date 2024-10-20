@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Atividade05_01</string>
+    <string name="my_name">Gustavo Guimarães de Oliveira</string>
+    <string name="my_ra">1110482313013</string>
+    <string name="qtd_faces">Quantidade de Faces</string>
+    <string name="d4">D4</string>
+    <string name="d6">D6</string>
+    <string name="d8">D8</string>
+    <string name="d10">D10</string>
+    <string name="d12">D12</string>
+    <string name="d20">D20</string>
+    <string name="d100">D100</string>
+    <string name="qtd_1">1 Dado</string>
+    <string name="qtd_2">2 Dados</string>
+    <string name="qtd_3">3 Dados</string>
+    <string name="btn_rolar">Rolar</string>
+    <string name="tv_result">Resultado:</string>
+</resources>
